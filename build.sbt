@@ -3,8 +3,11 @@ val graphEditor = (
 ).enablePlugins(
 	ScalaJSPlugin
 ).settings(
-	name := "Scala.js Tutorial",
+	name := "semantics-editor",
+	organization := "com.github.textthunder",
+  version := "0.1.0-SNAPSHOT",
+  mainClass := Some("com.github.textthunder.semanticseditor.SemanticsEditor"),
+  libraryDependencies += "org.scala-js" %%% "scalajs-dom" % "0.9.6",
 	scalaVersion := "2.12.6",
 	scalaJSUseMainModuleInitializer := true
 )
-
