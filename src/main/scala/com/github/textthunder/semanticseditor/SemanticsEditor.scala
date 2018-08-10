@@ -3,12 +3,17 @@ package com.github.textthunder.semanticseditor
 import org.scalajs.dom
 import dom.{Event, document}
 
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSExport, JSExportTopLevel}
+
+@JSExportTopLevel("SemanticsEditor")
 object SemanticsEditor {
-  def main(arguments: Array[String]): Unit = {
-    document.addEventListener("ready", (_: Event) => {
+  @JSExport
+  def main(arguments: js.Array[String]): Unit = {
+    dom.window.addEventListener("load", (_: Event) => {
       document.body.appendChild(
         document.createTextNode("Semantics Editor")
       )
-    }, false)
+    }, useCapture = false)
   }
 }
