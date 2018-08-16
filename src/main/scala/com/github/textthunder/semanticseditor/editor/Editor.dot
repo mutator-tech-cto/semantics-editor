@@ -1,0 +1,11 @@
+digraph Editor {
+    Editor;
+    EditorCanRender [label = "can"];
+    Render;
+    StreamOfSvgElements [shape = record, label = "{ Stream | SvgElement }"];
+    EditorHasGraph [label = "has"];
+    EditableGraph [shape = record, label = "{ Graph | VertexViewModel | { | EditableString | } }"];
+
+    Editor -> EditorCanRender -> Render -> StreamOfSvgElements;
+    Editor -> EditorHasGraph -> EditableGraph -> Render;
+}

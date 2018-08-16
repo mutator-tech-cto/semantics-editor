@@ -1,0 +1,6 @@
+digraph Vector {
+    Vector;
+    VectorToVector2d [label="can be"];
+    Vector2d;
+    Vector -> VectorToVector2d -> Vector2d;
+}

@@ -1,0 +1,6 @@
+graph StorageIndex {
+    StorageIndex[
+        shape = record,
+        label = "{ StorageIndex | Index \<: StorageIndex\[Index\] }"
+    ];
+}

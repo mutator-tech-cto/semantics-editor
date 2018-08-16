@@ -1,0 +1,8 @@
+digraph IndexStorage {
+    IndexStorage;
+    indices;
+    values;
+
+    IndexStorage -> indices;
+    IndexStorage -> values;
+}

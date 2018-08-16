@@ -1,0 +1,10 @@
+digraph SemanticsEditor {
+    storage;
+    space;
+    "graph";
+    editor;
+
+    editor -> "graph";
+    editor -> space;
+    editor -> storage;
+}
